@@ -16,7 +16,7 @@ El objetivo fundamental es el desarrollo completo de la herramienta de análisis
 
 ## Plan de trabajo
 
-1. Limpieza de datos
+1. Obtención y limpieza de datos
 2. Creación de visualizaciones para el análisis
 3. Creación de modelos de ML para las predicciones
 4. Comprobación de los modelos
