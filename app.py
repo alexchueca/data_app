@@ -493,7 +493,7 @@ def create_valuation():
                for idx, row in df[df['current_value'] > 0].iterrows()]
     
     return html.Div([
-        html.H1("💰 Predicción de Valor - Random Forest", className="mb-2"),
+        html.H1("💰 Predicción de Valor", className="mb-2"),
         html.P("Predice el valor de mercado basándose en estadísticas de rendimiento", className="lead mb-4"),
         
         dbc.Row([
@@ -531,7 +531,7 @@ def create_clustering():
     labels = clustering_model['labels']
     
     return html.Div([
-        html.H1("🎨 Estilos de Juego - Clustering ML", className="mb-2"),
+        html.H1("🎨 Estilos de Juego", className="mb-2"),
         html.P(f"{len(data)} jugadores agrupados en 6 estilos usando K-Means", className="lead mb-4"),
         
         dbc.Row([
@@ -580,7 +580,7 @@ def create_bargains():
     gangas = anomaly_model['gangas']
     
     return html.Div([
-        html.H1("💎 Gangas del Mercado - Anomaly Detection", className="mb-2"),
+        html.H1("💎 Gangas del Mercado", className="mb-2"),
         html.P(f"{len(gangas)} jugadores infravalorados detectados", className="lead mb-4"),
         
         dbc.Row([
@@ -637,7 +637,7 @@ def create_recommend():
                for idx, row in players.iterrows()]
     
     return html.Div([
-        html.H1("🔍 Recomendador - Netflix Style", className="mb-2"),
+        html.H1("🔍 Recomendador", className="mb-2"),
         html.P(f"Encuentra jugadores similares entre {len(players)} opciones", className="lead mb-4"),
         
         dbc.Row([dbc.Col([dbc.Card([
